@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Noticias - Instituto Tecnológico de Playas de Rosarito</title>
+    <script src="./js/Tailwind_3.4.js"></script>
+    <link href="./fonts/Newsreader.css" rel="stylesheet" />
+    <link href="./fonts/Material_Symbols_Outline.css" rel="stylesheet" />
+    <script src="./js/tailwind.js"></script>
+  </head>
+  <body class="bg-background-light dark:bg-background-dark font-sans">
+    <div
+      class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden"
+    >
+      <div class="layout-container flex h-full grow flex-col">
+        <header
+          class="bg-white dark:bg-background-dark border-b border-gray-200 dark:border-gray-700"
+        >
+          <div class="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <div class="flex items-center justify-between h-16">
+              <div class="flex items-center gap-8">
+                <div
+                  class="flex items-center gap-3 text-gray-900 dark:text-white"
+                >
+                  <img
+                    alt="Logo TecNM"
+                    class="h-12"
+                    src="./img/Logo-TecNM.png"
+                  />
+                  <h2 class="text-lg font-bold font-display tracking-tight">
+                    Instituto Tecnológico de Rosarito
+                  </h2>
+                </div>
+                <nav class="hidden md:flex items-center gap-8">
+                  <a
+                    class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary"
+                    href="./index.html"
+                    >Inicio</a
+                  >
+                  <a
+                    class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary"
+                    href="#"
+                    >Oferta Educativa</a
+                  >
+                  <a
+                    class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary"
+                    href="#"
+                    >Alumnos</a
+                  >
+                  <a
+                    class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary"
+                    href="./servicios.html"
+                    >Servicios</a
+                  >
+                  <a
+                    class="text-sm font-medium text-primary dark:text-primary"
+                    href="./noticias.html"
+                    >Noticias</a
+                  >
+                </nav>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="hidden sm:flex items-center">
+                  <label class="relative">
+                    <span
+                      class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 dark:text-gray-400"
+                      >search</span
+                    >
+                    <input
+                      class="form-input w-full min-w-0 resize-none overflow-hidden rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white placeholder:text-gray-500 dark:placeholder:text-gray-400 pl-10 pr-4 py-2 text-sm border-transparent focus:border-primary focus:ring-primary"
+                      placeholder="Buscar"
+                      type="search"
+                    />
+                  </label>
+                </div>
+                <button
+                  class="hidden sm:flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-wide hover:bg-primary/90"
+                >
+                  <span class="truncate">Contacto</span>
+                </button>
+                <button
+                  class="md:hidden p-2 rounded-md text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
+                >
+                  <span class="material-symbols-outlined">menu</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </header>
+        <main class="flex-1">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16">
+            <div class="flex flex-col gap-8">
+              <div class="flex flex-wrap justify-between items-center gap-6">
+                <div class="flex flex-col gap-2">
+                  <h1
+                    class="text-4xl sm:text-5xl font-extrabold font-display tracking-tight text-gray-900 dark:text-white"
+                  >
+                    Noticias y Eventos
+                  </h1>
+                  <p class="text-lg text-gray-600 dark:text-gray-400">
+                    Mantente al día con las últimas noticias y comunicados del
+                    TecNM Campus Playas de Rosarito.
+                  </p>
+                </div>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <button
+                  class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary/10 dark:bg-primary/20 px-4 text-primary dark:text-primary"
+                >
+                  <p class="text-sm font-medium">Todas</p>
+                </button>
+                <button
+                  class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-gray-200 dark:bg-gray-700 px-4 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600"
+                >
+                  <p class="text-sm font-medium">Académicas</p>
+                </button>
+                <button
+                  class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-gray-200 dark:bg-gray-700 px-4 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600"
+                >
+                  <p class="text-sm font-medium">Eventos</p>
+                </button>
+                <button
+                  class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-gray-200 dark:bg-gray-700 px-4 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600"
+                >
+                  <p class="text-sm font-medium">Deportes</p>
+                </button>
+                <button
+                  class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-gray-200 dark:bg-gray-700 px-4 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600"
+                >
+                  <p class="text-sm font-medium">Culturales</p>
+                </button>
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div
+                  class="flex flex-col gap-4 bg-white dark:bg-gray-800/50 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300"
+                >
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-[4/3] bg-cover"
+                    data-alt="Estudiantes trabajando con un robot en una competencia."
+                    style="
+                      background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD9s6EfF7YxAgE2TkJfkk7tdkWw8CNU_iKnSvML2LslsqagYB3rQnDm_DHrPSBWOQhxEzudQDwrks8PetRBRs6DUmxmv4KITjHSEwJigqcdy6T4Qife1BWBk0EDd6maaS1h6Nc995IEoaRhC2yhIGnPbz6WOM_XenfxSeU3sHcGB48J5NPi5JsiDcPa4KmlHKv5pgiRRdczqmoWhxu3VQBF8inQjd6XASxQo8pM9mwu19etn5cx7sWs9fSM0GsVkmEKYB4uyfHycUP1');
+                    "
+                  ></div>
+                  <div class="p-5 flex flex-col gap-3">
+                    <p class="text-sm text-gray-500 dark:text-gray-400">
+                      25 de Octubre de 2023
+                    </p>
+                    <h3
+                      class="text-lg font-bold font-display text-gray-900 dark:text-white leading-snug"
+                    >
+                      Estudiantes del TecNM Playas de Rosarito ganan competencia
+                      nacional de robótica
+                    </h3>
+                    <p
+                      class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed"
+                    >
+                      Un equipo multidisciplinario de nuestras ingenierías
+                      obtuvo el primer lugar en el torneo celebrado en la ciudad
+                      de Monterrey...
+                    </p>
+                    <a
+                      class="inline-flex items-center gap-1 text-primary font-semibold text-sm mt-2 group"
+                      href="#"
+                    >
+                      Leer más
+                      <span
+                        class="material-symbols-outlined transition-transform group-hover:translate-x-1"
+                        >arrow_forward</span
+                      >
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-col gap-4 bg-white dark:bg-gray-800/50 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300"
+                >
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-[4/3] bg-cover"
+                    data-alt="Jóvenes estudiantes sonriendo en su ceremonia de graduación."
+                    style="
+                      background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDvub7td__f_a7xGCNzQdXQOuqatf0Opw7nUDszd0Ehctkq86xJiP4M2RvfzYVWGnyl7VWwOfpS7sy84HRhV4Shme2-YR6uoi2FN6miWdaQNjyZFYrZJRcQ9vv-fFuQHx174vUec29MLrMudyEwaLfebJGxUtXU-2EEOFGgHZbKD6TgaSjalqyjN21cbq7jCilg_gvIFOWDWJ_Rsen1xII3H_HJWQ093GxmyHcqhsv1WnoYfiz0jB7y8c3vNSRLgVja1z0BVVCNfO0X');
+                    "
+                  ></div>
+                  <div class="p-5 flex flex-col gap-3">
+                    <p class="text-sm text-gray-500 dark:text-gray-400">
+                      20 de Octubre de 2023
+                    </p>
+                    <h3
+                      class="text-lg font-bold font-display text-gray-900 dark:text-white leading-snug"
+                    >
+                      Convocatoria abierta para el proceso de admisión
+                      Enero-Junio 2024
+                    </h3>
+                    <p
+                      class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed"
+                    >
+                      El Tecnológico Nacional de México Campus Playas de
+                      Rosarito anuncia las fechas y requisitos para los
+                      aspirantes de nuevo ingreso...
+                    </p>
+                    <a
+                      class="inline-flex items-center gap-1 text-primary font-semibold text-sm mt-2 group"
+                      href="#"
+                    >
+                      Leer más
+                      <span
+                        class="material-symbols-outlined transition-transform group-hover:translate-x-1"
+                        >arrow_forward</span
+                      >
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-col gap-4 bg-white dark:bg-gray-800/50 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300"
+                >
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-[4/3] bg-cover"
+                    data-alt="Personas firmando un documento en una mesa de juntas."
+                    style="
+                      background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAunm1YBBmFR2fjLMEVjo6O_fkkUhwoMfML21lUC8QvAIZv5FLglVNaLLOT1kU99Wug8KMyNMnnQ3PhtKw7trszwskdL_Pm65s0SSBikARnPX9zUtUAJL6e-CFUqN8JaJM5IXvEMdwhajHicKHsu3WToT7LnH3M76w_wA2dnTYf9S0hV8M2LrqVIFSoD1ghBQw_Af1M7F8EXzvnwvx-JhEQ5Kn_XYThzUOVtRNOYcMHdrLR5KBCf9vSlCcjLb8VHdDurVCqBG3XNNLx');
+                    "
+                  ></div>
+                  <div class="p-5 flex flex-col gap-3">
+                    <p class="text-sm text-gray-500 dark:text-gray-400">
+                      15 de Octubre de 2023
+                    </p>
+                    <h3
+                      class="text-lg font-bold font-display text-gray-900 dark:text-white leading-snug"
+                    >
+                      Se firma importante convenio de colaboración con la
+                      industria hotelera
+                    </h3>
+                    <p
+                      class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed"
+                    >
+                      Con el objetivo de fortalecer la vinculación y las
+                      residencias profesionales, se formalizó una alianza
+                      estratégica con...
+                    </p>
+                    <a
+                      class="inline-flex items-center gap-1 text-primary font-semibold text-sm mt-2 group"
+                      href="#"
+                    >
+                      Leer más
+                      <span
+                        class="material-symbols-outlined transition-transform group-hover:translate-x-1"
+                        >arrow_forward</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center justify-center pt-8">
+                <nav class="flex items-center gap-2">
+                  <a
+                    class="flex size-10 items-center justify-center text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary rounded-lg"
+                    href="#"
+                  >
+                    <span class="material-symbols-outlined">chevron_left</span>
+                  </a>
+                  <a
+                    class="text-sm font-bold flex size-10 items-center justify-center text-white bg-primary rounded-lg"
+                    href="#"
+                    >1</a
+                  >
+                  <a
+                    class="text-sm font-medium flex size-10 items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg"
+                    href="#"
+                    >2</a
+                  >
+                  <a
+                    class="text-sm font-medium flex size-10 items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg"
+                    href="#"
+                    >3</a
+                  >
+                  <span
+                    class="text-sm font-medium flex size-10 items-center justify-center text-gray-600 dark:text-gray-300"
+                    >...</span
+                  >
+                  <a
+                    class="text-sm font-medium flex size-10 items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg"
+                    href="#"
+                    >8</a
+                  >
+                  <a
+                    class="flex size-10 items-center justify-center text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary rounded-lg"
+                    href="#"
+                  >
+                    <span class="material-symbols-outlined">chevron_right</span>
+                  </a>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer
+          class="bg-white dark:bg-background-dark border-t border-gray-200 dark:border-gray-700"
+        >
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div
+              class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left"
+            >
+              <div>
+                <h4
+                  class="font-bold text-lg font-display text-gray-900 dark:text-white"
+                >
+                  Instituto Tecnológico de Playas de Rosarito
+                </h4>
+                <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">
+                  Av. Instituto Tecnológico S/N, Crucero del Cayaco, C.P. 39905,
+                  Playas de Rosarito, Baja California, México
+                </p>
+              </div>
+              <div>
+                <h4
+                  class="font-bold text-lg font-display text-gray-900 dark:text-white"
+                >
+                  Enlaces Rápidos
+                </h4>
+                <ul class="mt-2 space-y-1">
+                  <li>
+                    <a
+                      class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary"
+                      href="#"
+                      >SIITEC</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary"
+                      href="#"
+                      >Moodle</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary"
+                      href="#"
+                      >Correo Institucional</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h4
+                  class="font-bold text-lg font-display text-gray-900 dark:text-white"
+                >
+                  Síguenos
+                </h4>
+                <div class="flex justify-center md:justify-start gap-4 mt-2">
+                  <a class="text-gray-500 hover:text-primary" href="#"
+                    ><svg
+                      class="h-6 w-6"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.48 2.96,10.3 2.38,10.03C2.38,10.05 2.38,10.07 2.38,10.08C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16.03 6.02,17.25 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z"
+                      ></path></svg
+                  ></a>
+                  <a class="text-gray-500 hover:text-primary" href="#"
+                    ><svg
+                      class="h-6 w-6"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12,2A10,10 0 0,0 2,12C2,16.42 5.58,20 10,20C10.64,20 11.25,19.93 11.84,19.82C12.44,19.94 13.06,20 13.7,20C18.42,20 22,16.42 22,12C22,6.9 18.05,2.54 13.25,2.05C12.83,2.02 12.42,2 12,2M12,4C12.27,4 12.54,4.03 12.8,4.05C12.25,4.61 11.8,5.29 11.8,6.1C11.8,7.31 12.64,8.32 13.8,8.5C14.04,9.2 14.1,10.15 14.1,10.67C14.1,11.23 14.04,11.7 13.93,12.11C14.86,12.11 15.7,11.69 16.35,11.04C16.83,11.81 17.1,12.75 17.1,13.7C17.1,15.29 16.09,16.63 14.6,16.95C14.18,17.43 13.64,17.83 13,18.11C12.18,17.76 11.45,17.21 10.89,16.5C10.5,15.53 10.5,14.28 10.8,13.24C10.8,11.72 10.15,10.37 9.1,9.45C8.3,10.33 7.8,11.5 7.8,12.8C7.8,13.44 7.92,14.06 8.13,14.61C7.2,14.2 6.5,13.31 6.5,12.2C6.5,11.2 7.15,10.37 8.09,10.05C8.09,9.38 8.27,8.75 8.6,8.2C7.5,8.2 6.6,8.7 6.6,9.7C6.6,9.81 6.6,9.91 6.62,10C5.93,9.5 5.5,8.68 5.5,7.7C5.5,6.5 6.4,5.6 7.5,5.6C8.25,5.6 8.9,6 9.2,6.6C9.6,5.8 10.5,5.3 11.5,5.3C11.66,5.3 11.82,5.32 11.97,5.36C12.18,4.72 12.5,4.18 12.8,4.05M11,6.5C10.17,6.5 9.5,7.17 9.5,8C9.5,8.83 10.17,9.5 11,9.5C11.83,9.5 12.5,8.83 12.5,8C12.5,7.17 11.83,6.5 11,6.5M15,9.5C14.17,9.5 13.5,10.17 13.5,11C13.5,11.83 14.17,12.5 15,12.5C15.83,12.5 16.5,11.83 16.5,11C16.5,10.17 15.83,9.5 15,9.5Z"
+                      ></path></svg
+                  ></a>
+                  <a class="text-gray-500 hover:text-primary" href="#"
+                    ><svg
+                      class="h-6 w-6"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19,3H5C3.89,3 3,3.89 3,5V19C3,20.1 3.9,21 5,21H19C20.1,21 21,20.1 21,19V5C21,3.89 20.1,3 19,3M8.5,18H6.5V11H8.5V18M7.5,9.8C6.56,9.8 5.8,9.04 5.8,8.1C5.8,7.16 6.56,6.4 7.5,6.4C8.44,6.4 9.2,7.16 9.2,8.1C9.2,9.04 8.44,9.8 7.5,9.8M18,18H16V14.33C16,13.08 15.42,12.31 14.5,12.31C13.5,12.31 13,13 13,14.16V18H11V11H13V12.16C13.5,11.41 14.28,11 15.5,11C17.44,11 18,12.31 18,14V18Z"
+                      ></path></svg
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="mt-8 border-t border-gray-200 dark:border-gray-700 pt-8 text-center text-sm text-gray-500 dark:text-gray-400"
+            >
+              <p>
+                © 2025 Instituto Tecnológico de Playas de Rosarito. Todos los
+                derechos reservados.
+              </p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
