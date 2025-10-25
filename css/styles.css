@@ -1,0 +1,53 @@
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+.hero-bg {
+  background-image: url("../img/2_rosarito_portada.webp");
+}
+.service-card {
+  @apply bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transition-all duration-300 border border-gray-200 dark:border-gray-700;
+}
+.service-card:hover {
+  @apply shadow-xl transform -translate-y-1;
+}
+.service-card-header {
+  @apply p-6 flex flex-col items-center justify-center;
+}
+.service-card-icon-wrapper {
+  @apply bg-primary/10 dark:bg-primary/20 p-4 rounded-full mb-4;
+}
+.service-card-icon {
+  @apply text-primary dark:text-white text-4xl;
+}
+.service-card-title {
+  @apply text-lg font-bold text-gray-800 dark:text-white text-center;
+}
+.service-card-body {
+  @apply p-6 pt-0;
+}
+.service-card-description {
+  @apply text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6 text-center;
+}
+.service-card-cta {
+  @apply flex justify-center;
+}
+.service-card-button {
+  @apply flex items-center justify-center gap-2 px-5 py-2 bg-white dark:bg-gray-700 text-primary dark:text-white font-semibold rounded-md border border-primary dark:border-primary-dark hover:bg-primary hover:text-white dark:hover:bg-primary-dark transition-colors text-sm;
+}
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #e2e8f0;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+.timeline-item:first-child::before {
+  top: 50%;
+}
+.timeline-item:last-child::before {
+  bottom: 50%;
+}
