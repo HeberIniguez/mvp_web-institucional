@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
+  
+
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
@@ -9,51 +11,66 @@
     <script src="./js/Tailwind_3.4.js"></script>
     <script src="./js/tailwind.js"></script>
   </head>
+
+
   <body class="bg-itt-gray-100 dark:bg-itt-gray-900 font-display">
     <div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
-      <header class="fixed w-full top-0 z-10 bg-white/80 dark:bg-itt-gray-900/80 backdrop-blur-sm shadow-md">
-        <div class="layout-container flex h-full grow flex-col">
-          <div class="mx-auto flex w-full max-w-7xl flex-1 justify-center px-4 sm:px-6 lg:px-8">
-            <div class="layout-content-container flex flex-col w-full flex-1">
-              <div class="flex items-center justify-between whitespace-nowrap border-b border-solid border-itt-gray-200 dark:border-itt-gray-700 py-3">
-                <div class="flex items-center gap-4 text-itt-blue dark:text-white">
-                  <img alt="Logo ITPR" class="h-10" src="./img/logo.svg" />
-                  <h2 class="hidden sm:block text-lg font-bold leading-tight tracking-[-0.015em]">
+      
+      
+      <header class="fixed z-50 w-full text-white bg-itt-blue/90 shadow-md">
+          <div class="px-4 md:px-10 lg:px-20 mx-auto">
+            <div class="flex items-center justify-between h-20">
+              <div class="flex items-center gap-4">
+                <div class="w-14 h-14">
+                  <img
+                    alt="Logo"
+                    class="h-full w-full object-contain"
+                    src="./img/logo.svg"
+                  />
+                </div>
+                <div class="hidden sm:block">
+                  <h2 class="text-white text-lg font-bold font-display leading-tight tracking-[-0.015em]">
                     Instituto Tecnológico de Playas de Rosarito
                   </h2>
-                </div>
-                <nav class="hidden md:flex flex-1 justify-center gap-8">
-                  <div class="flex items-center gap-9">
-                    <a class="text-sm font-medium leading-normal text-itt-gray-800 dark:text-itt-gray-300 hover:text-itt-red dark:hover:text-itt-red transition-colors"
-                      href="./index.html">
-                      Inicio
-                    </a>
-                    <a class="text-sm font-medium leading-normal text-itt-gray-800 dark:text-itt-gray-300 hover:text-itt-red dark:hover:text-itt-red transition-colors"
-                      href="#">
-                      Oferta Educativa
-                    </a>
-                    <a class="text-sm font-medium leading-normal text-itt-gray-800 dark:text-itt-gray-300 hover:text-itt-red dark:hover:text-itt-red transition-colors"
-                      href="#">
-                      Aspirantes
-                    </a>
-                    <a class="text-sm font-medium leading-normal text-itt-red dark:text-itt-red"
-                      href="./contacto.html">
-                      Contacto
-                    </a>
-                  </div>
-                </nav>
-                <div class="flex items-center gap-4">
-                  <button class="md:hidden flex items-center justify-center size-10 rounded-lg border border-itt-gray-200 dark:border-itt-gray-700 text-itt-gray-800 dark:text-itt-gray-300">
-                    <span class="material-symbols-outlined">menu</span>
-                  </button>
+                  <p class="text-xs text-gray-300">
+                    TECNOLÓGICO NACIONAL DE MÉXICO
+                  </p>
                 </div>
               </div>
+              <div class="md:hidden">
+                <button class="text-white">
+                  <span class="material-symbols-outlined">menu</span>
+                </button>
+              </div>
+              <nav class="hidden md:flex items-center gap-6">
+                <a class="text-white text-sm font-medium hover:text-accent transition-colors" 
+                  href="./index.html">
+                  Inicio
+                </a>
+                <a class="text-white text-sm font-medium hover:text-accent transition-colors"
+                  href="#">
+                  Admisiones
+                </a>
+                <a class="text-white text-sm font-medium hover:text-accent transition-colors"
+                  href="#">
+                  Vinculación
+                </a>
+                <a class="text-white text-sm font-medium hover:text-accent transition-colors"
+                  href="#">
+                  Investigación
+                  </a>
+                <a class="text-white text-sm font-medium hover:text-accent transition-colors"
+                  href="./contacto.html">
+                  Contacto
+                </a>
+              </nav>
             </div>
           </div>
-        </div>
-      </header>
-      <main class="flex-grow">
-        <div class="bg-itt-blue text-white py-16 sm:py-24">
+        </header>
+      
+      
+        <main class="flex-grow">
+        <div class="bg-itt-gray-800 text-white py-16 sm:py-24">
           <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div class="text-center">
               <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-white">
@@ -66,6 +83,7 @@
             </div>
           </div>
         </div>
+        
         <div class="py-16 sm:py-24">
           <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
@@ -131,7 +149,7 @@
                 </div>
               </div>
               <div class="lg:col-span-1">
-                <div class="bg-itt-blue p-8 rounded-xl shadow-lg h-full">
+                <div class="bg-itt-gray-800 p-8 rounded-xl shadow-lg h-full">
                   <h3 class="text-2xl font-bold text-white mb-6">
                     Información de Contacto
                   </h3>
@@ -192,6 +210,8 @@
           </div>
         </div>
       </main>
+
+
       <footer class="bg-itt-blue dark:bg-itt-gray-900 border-t border-itt-gold/50 dark:border-itt-gray-700 text-white">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -261,36 +281,42 @@
               <h3 class="text-sm font-semibold text-white uppercase tracking-wider">
                 Síguenos
               </h3>
-              <div class="flex mt-4 space-x-4">
-                <a class="text-itt-gray-400 hover:text-itt-gold transition-colors"
-                  href="#">
-                  <svg
-                    aria-hidden="true"
-                    class="h-6 w-6"
-                    fill="currentColor"
-                    viewBox="0 0 24 24">
-                    <path
-                      clip-rule="evenodd"
-                      d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                      fill-rule="evenodd">
-                    </path>
-                  </svg>
-                </a>
-                <a class="text-itt-gray-400 hover:text-itt-gold transition-colors"
-                  href="#">
-                  <svg
-                    aria-hidden="true"
-                    class="h-6 w-6"
-                    fill="currentColor"
-                    viewBox="0 0 24 24">
-                    <path
-                      d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
-                    ></path>
-                  </svg>
-                </a>
-              </div>
+              <div class="flex space-x-4">
+                  <a class="text-gray-300 hover:text-white" href="https://x.com/home">
+                    <svg
+                      class="h-6 w-6"
+                      fill="currentColor"
+                      viewBox="0 0 24 24">
+                      <path
+                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                      </path>
+                    </svg>
+                  </a>
+                  <a class="text-gray-300 hover:text-white" href="https://www.facebook.com/">
+                    <svg
+                      class="h-6 w-6"
+                      fill="currentColor"
+                      viewBox="0 0 24 24">
+                      <path
+                        d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.32 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96C18.34 21.21 22 17.06 22 12.06C22 6.53 17.5 2.04 12 2.04Z">
+                      </path>
+                    </svg>
+                  </a>
+                  <a class="text-gray-300 hover:text-white" href="https://www.instagram.com/">
+                    <svg
+                      class="h-6 w-6"
+                      fill="currentColor"
+                      viewBox="0 0 24 24">
+                      <path
+                        d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z">
+                      </path>
+                    </svg>
+                  </a>
+                </div>
             </div>
           </div>
+          
+          
           <div class="mt-8 border-t border-itt-gray-700 pt-8 text-center">
             <p class="text-sm text-itt-gray-400">
               © 2025 Instituto Tecnológico de Playas de Rosarito. 

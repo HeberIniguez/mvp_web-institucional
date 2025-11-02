@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
+
+  <!-- Metadata del sitio necesaria para el navegador-->
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
@@ -11,12 +13,18 @@
     <script src="./js/tailwind.js"></script>
     <link href="./css/styles.css" rel="stylesheet" />
   </head>
+
+  <!-- Cuerpo del Sitio WEB -->
   <body>
     <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
       <div class="layout-container flex h-full grow flex-col">
+
+        <!-- Encabezado del Sitio WEB -->
         <header class="fixed z-50 w-full text-white bg-itt-blue/80 shadow-md">
           <div class="px-4 md:px-10 lg:px-20 mx-auto">
             <div class="flex items-center justify-between h-20">
+              
+              <!-- Titulo y Logo -->
               <div class="flex items-center gap-4">
                 <div class="w-14 h-14">
                   <img
@@ -34,11 +42,15 @@
                   </p>
                 </div>
               </div>
+
+              <!-- Boton de Menu Navegacion -->
               <div class="md:hidden">
                 <button class="text-white">
                   <span class="material-symbols-outlined">menu</span>
                 </button>
               </div>
+
+              <!-- Navegacion a otras paginas del sitio -->
               <nav class="hidden md:flex items-center gap-6">
                 <a class="text-white text-sm font-medium hover:text-accent transition-colors" 
                   href="./servicios.html">
@@ -64,6 +76,8 @@
             </div>
           </div>
         </header>
+
+        <!-- Contenido Principal de la Pagina -->
         <main class="flex-grow">
           <div class="relative h-[450px] md:h-[550px] w-full hero-bg bg-cover bg-center">
             <div class="absolute inset-0 bg-black/40"></div>
@@ -73,14 +87,17 @@
               </h1>
               <p class="mt-4 max-w-2xl text-base md:text-lg font-light">
                 Conoce nuestra oferta educativa y sé parte de la comunidad
-                tecnológica más grande del país.
+                <br> tecnológica más grande del país.
               </p>
             </div>
           </div>
+
+          <!-- Seccion de Bienvenida -->
           <section class="py-16 md:py-24 bg-white dark:bg-background-dark/50">
             <div class="max-w-4xl mx-auto px-4 text-center">
               <h2 class="text-3xl md:text-4xl font-bold text-itt-blue dark:text-white mb-6 font-display">
-                Bienvenido al Instituto Tecnológico de Playas de Rosarito
+                Bienvenido al Instituto Tecnológico de 
+                <br> Playas de Rosarito
               </h2>
               <p class="text-itt-gray dark:text-gray-300 text-lg md:text-xl font-normal leading-relaxed">
                 Nuestra institución se dedica a formar líderes y profesionales
@@ -91,8 +108,12 @@
               </p>
             </div>
           </section>
+
+          <!-- Seccion de Cards -->
           <section class="py-16 md:py-24 bg-itt-light-gray dark:bg-background-dark/30">
             <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-4">
+              
+              <!-- Card Programas Académicos -->
               <div class="flex flex-col items-center text-center gap-4 p-8 bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-shadow transform hover:-translate-y-1">
                 <span class="material-symbols-outlined text-5xl text-itt-blue">
                   school
@@ -105,6 +126,8 @@
                   profesional.
                 </p>
               </div>
+              
+              <!-- Card Vida Estudiantil -->
               <div class="flex flex-col items-center text-center gap-4 p-8 bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-shadow transform hover:-translate-y-1">
                 <span class="material-symbols-outlined text-5xl text-itt-blue">
                   groups
@@ -117,6 +140,8 @@
                   universitaria.
                 </p>
               </div>
+
+              <!-- Card Investigación y Desarrollo -->
               <div class="flex flex-col items-center text-center gap-4 p-8 bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-shadow transform hover:-translate-y-1">
                 <span class="material-symbols-outlined text-5xl text-itt-blue">
                   rocket_launch
@@ -131,6 +156,8 @@
             </div>
           </section>
         </main>
+
+        <!--Pie de la Pagina WEB -->
         <footer class="mt-auto bg-itt-blue text-white py-12 px-4">
           <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
             <div class="flex flex-col items-center md:items-start">
@@ -160,24 +187,52 @@
                 Calendario Escolar
               </a>
             </div>
+
+            <!-- Seccion Redes Sociales -->
             <div class="flex flex-col items-center md:items-end">
               <h4 class="font-bold text-lg mb-2 font-display">Síguenos</h4>
-              <div class="flex gap-4">
-                <a class="text-gray-300 hover:text-accent transition-colors"
-                  href="https://www.facebook.com">
-                  Facebook
-                </a>
-                <a class="text-gray-300 hover:text-accent transition-colors"
-                  href="https://www.twitter.com">
-                  Twitter
-                </a>
-                <a class="text-gray-300 hover:text-accent transition-colors"
-                  href="https://www.instagram.com">
-                  Instagram
-                </a>
-              </div>
+              <div class="flex space-x-4">
+
+                  <!-- X (Twitter) -->
+                  <a class="text-gray-300 hover:text-white" href="https://x.com/home">
+                    <svg
+                      class="h-6 w-6"
+                      fill="currentColor"
+                      viewBox="0 0 24 24">
+                      <path
+                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                      </path>
+                    </svg>
+                  </a>
+
+                  <!-- Facebook -->
+                  <a class="text-gray-300 hover:text-white" href="https://www.facebook.com/">
+                    <svg
+                      class="h-6 w-6"
+                      fill="currentColor"
+                      viewBox="0 0 24 24">
+                      <path
+                        d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.32 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96C18.34 21.21 22 17.06 22 12.06C22 6.53 17.5 2.04 12 2.04Z">
+                      </path>
+                    </svg>
+                  </a>
+
+                  <!-- Instagram -->
+                  <a class="text-gray-300 hover:text-white" href="https://www.instagram.com/">
+                    <svg
+                      class="h-6 w-6"
+                      fill="currentColor"
+                      viewBox="0 0 24 24">
+                      <path
+                        d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z">
+                      </path>
+                    </svg>
+                  </a>
+                </div>
             </div>
           </div>
+
+          <!--Copyright -->
           <div class="border-t border-blue-800 mt-8 pt-6">
             <p class="text-center text-gray-400 text-xs">
               © 2025 Instituto Tecnológico de Playas de Rosarito. Todos los
